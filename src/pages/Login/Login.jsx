@@ -1,8 +1,16 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
-import logo from "../../assets/images/logo.png";
 import { loginMedico } from "../../api/login";
+// Importando o CSS do Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Importando o JavaScript do Bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// Importando o CSS dos ícones
+import 'bootstrap-icons/font/bootstrap-icons.css';
+/* Import imagens */
+import logo from "../../assets/images/logo.png";
+import card from "../../assets/images/card.png";
 
 function Login() {
   const [nome, setNome] = useState('');
@@ -15,38 +23,46 @@ function Login() {
     try {
       const result = await loginMedico({ nome, senha });
       alert('Login realizado com sucesso!');
-      navigate('/filtro');  // Redireciona para a página de filtro após login
+      navigate('/filtro');
     } catch (error) {
-      alert('Credenciais inválidas');  // Exibe erro se falhar
+      alert('Credenciais inválidas');
     }
   }
 
   return (
     <div className='page-login'>
-      <header className='login-header'>
-        <img src={logo} alt="logo da empresa" className='logo' />
-      </header>
       <main className='login-main'>
+        <img src={logo} alt="logo da empresa" className='logo'/>
         <div className="login-container">
-          <form onSubmit={handleLogin}>
-            <input
-              type="text"
-              placeholder="Nome"
-              value={nome}
-              onChange={(e) => setNome(e.target.value)}
-              required
-            />
-            <input
-              type="password"
-              placeholder="Senha"
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
-              required
-            />
-            <button type="submit">Entrar</button>
+          <form className='align-form' onSubmit={handleLogin}>
+            <h4 className='page-title'>Acesse nossa Plataforma</h4>
+            <div className='conteiner-input'>
+              <span className='name-input'>Email</span>
+              <input
+                className='style-inputs espacamento'
+                type="email"
+                placeholder="Insira seu email"
+                value={nome}
+                onChange={(e) => setNome(e.target.value)}
+                required
+              />
+            </div>
+            <div className='conteiner-input'>
+              <span className='name-input'>Senha</span>
+              <input
+                className='style-inputs'
+                type="password"
+                placeholder="Digite sua senha"
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)}
+                required
+              />
+            </div>
+            <button className='button-login' type="submit">Acessar</button>
           </form>
         </div>
       </main>
+      <img className='imagemteste' src={card} alt="card" />
     </div>
   );
 }
