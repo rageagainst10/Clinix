@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useState } from 'react';
+import {useNavigate } from 'react-router-dom';
 import './Login.css';
-import { loginMedico } from "../../api/login";
+import {loginMedico } from "../../api/login";
 // Importando o CSS do Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Importando o JavaScript do Bootstrap
