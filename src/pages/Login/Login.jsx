@@ -59,6 +59,10 @@ function Login() {
               />
             </div>
             <button className='button-login' type="submit">Acessar</button>
+            <div className='link-register'>
+              <span className='description-link'>Não possui conta?&nbsp;</span>
+              <a className='button-link' href="/cadastro">Clique Aqui!!!</a>
+            </div>
           </form>
         </div>
       </main>

@@ -83,3 +83,19 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.link-register{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.description-link{
+    font-size: 12px;
+}
+
+.button-link{
+    font-size: 12px;
+    font-weight: bold;
+    color: #192437;
+}
