@@ -7,6 +7,7 @@
 .container-navbar{
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -14,9 +15,115 @@
     display: flex;
     flex-direction: column;
     width: 350px;
+    border: 1px solid #C1C1C1;
+    gap: 5px;
 }
 
-.logo {
+.logo_empresa{
     width: 201px;
     height: 94px;
+    margin-bottom: 30px;
+}
+
+/*buttons*/
+.button{
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.button-name{
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.icon-color{
+    color: #5C728C;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    border: 1px solid #C1C1C1;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+}
+
+h1,h2,h3,h4,h5,h6, span{
+    margin: 0;
+    padding: 0;
+}
+
+.container-list-search{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.container-list{
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.container-search{
+    display: flex;
+    width: 300px;
+    height: auto;
+    border: 1px solid #C1C1C1;
+    padding: 10px;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.teste{
+    margin-top: 10px;
+}
+
+.gap-2{
+    margin-top: 10px;
+}
+
+.button-filter{
+    background: linear-gradient(0deg, #5797E2 0%, #65ACFF 100%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.button-cancel{
+    border-radius: 5px;
+    color: #65ACFF;
+    border: 1px solid #65ACFF;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.align-buttons{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-search{
+    margin-bottom: 5px;
 }

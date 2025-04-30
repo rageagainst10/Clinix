@@ -11,6 +11,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 /* Import imagens */
 import logo from "../../assets/images/logo.png";
 import card from "../../assets/images/card.png";
+/* Import Components */
+import CustomInput from '../../components/CustomInput/CustomInput';
 
 function Login() {
   const [nome, setNome] = useState('');
@@ -36,26 +38,24 @@ function Login() {
         <div className="login-container">
           <form className='align-form' onSubmit={handleLogin}>
             <h4 className='page-title'>Acesse nossa Plataforma</h4>
-            <div className='conteiner-input'>
-              <span className='name-input'>Email</span>
-              <input
-                className='style-inputs espacamento'
-                type="email"
-                placeholder="Insira seu email"
+            <div className='gap'>
+              <CustomInput
+                label='Email'
+                name='email'
                 value={nome}
+                type='email'
                 onChange={(e) => setNome(e.target.value)}
-                required
+                placeholder="Insira seu email"
+                required={true}
               />
-            </div>
-            <div className='conteiner-input'>
-              <span className='name-input'>Senha</span>
-              <input
-                className='style-inputs'
-                type="password"
-                placeholder="Digite sua senha"
+              <CustomInput
+                label='Senha'
+                name='email'
                 value={senha}
+                type='password'
                 onChange={(e) => setSenha(e.target.value)}
-                required
+                placeholder="Digite sua senha"
+                required={true}
               />
             </div>
             <button className='button-login' type="submit">Acessar</button>
@@ -66,7 +66,7 @@ function Login() {
           </form>
         </div>
       </main>
-      <img className='imagemteste' src={card} alt="card" />
+      <img className='img-card' src={card} alt="card" />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.custom-input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-label{
+    font-size: 14px;
+}
+  
+.custom-input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #B4B4B4;
+}

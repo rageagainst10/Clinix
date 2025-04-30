@@ -9,11 +9,11 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login/>} />
-        <Route path="/cadastro" element={<Register/>} />
-        <Route path="/filtro" element={<Filter/>} />
-        <Route path="/registro" element={<Record />} />
-        <Route path="/prescricao" element={<Prescription />} />
+        <Route path="/" element={<Login/>}/>
+        <Route path="/cadastro" element={<Register/>}/>
+        <Route path="/filtro" element={<Filter/>}/>
+        <Route path="/registro" element={<Record/>}/>
+        <Route path="/prescricao" element={<Prescription/>}/>
       </Routes>
     </BrowserRouter>
   )
