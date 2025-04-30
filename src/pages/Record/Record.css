@@ -28,6 +28,8 @@
 .button{
     display: flex;
     width: 200px;
+    text-decoration: none;
+    color: black;
 }
 
 main{
@@ -61,4 +63,15 @@ h1,h2,h3,h4,h5,h6, span{
     padding: 20px;
     display: flex;
     width: 100%;
+    flex-direction: column;
+    gap: 10PX;
+}
+
+.button-save{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(0deg, #5797E2 0%, #65ACFF 100%);
+    color: white;
 }

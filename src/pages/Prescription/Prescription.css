@@ -28,6 +28,8 @@
 .button{
     display: flex;
     width: 200px;
+    text-decoration: none;
+    color: black;
 }
 
 main{
@@ -61,4 +63,11 @@ h1,h2,h3,h4,h5,h6, span{
     padding: 20px;
     display: flex;
     width: 100%;
+}
+
+.text-fild{
+    width: 300px;
+    height: 100px;
+    border: 1px solid #B4B4B4;
+    border-radius: 5px;
 }

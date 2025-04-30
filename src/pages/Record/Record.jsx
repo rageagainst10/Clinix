@@ -8,41 +8,65 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 /* Import imagens */
 import logo from "../../assets/images/logo.png";
+import { useState } from "react";
 /* Import FontAwesome icon*/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* Import icons */
 import { faLaptopMedical } from '@fortawesome/free-solid-svg-icons';
 import { faClipboardUser } from '@fortawesome/free-solid-svg-icons';
 import { faFileWaveform } from "@fortawesome/free-solid-svg-icons";
+/* Import Conponents */
+import DateSelector from "../../components/DateSelector/DateSelector";
+
+import CustomInput from "../../components/CustomInput/CustomInput";
 
 function Record (){
     return(
-            <div className="page-filter">
-                <nav className="container-navbar">
-                    <img className="logo_empresa" src={logo} alt="logo da empresa"/>
-                    <button className="button">
-                        <FontAwesomeIcon icon={faLaptopMedical} shake/>
-                        <span>Prontuario</span>
-                    </button>
-                    <button className="button">
-                        <FontAwesomeIcon icon={faClipboardUser} shake />
-                        <span>Cadastro de Paciente</span>
-                    </button>
-                    <button className="button">
-                        <FontAwesomeIcon icon={faFileWaveform} shake />
-                        <span>prescrição</span>
-                    </button>
-                </nav>
-                <main>
-                    <header>
-                        <h3>Cadastro de Paciente</h3>
-                    </header>
-                    <section className="container-list">
-                        <h1>list</h1>
-                    </section>
-                </main>
-            </div>
-        )
+        <div className="page-filter">
+            <nav className="container-navbar">
+                <img className="logo_empresa" src={logo} alt="logo da empresa"/>
+                <a href="/filtro" className="button">
+                    <FontAwesomeIcon className="icon-color" icon={faLaptopMedical} shake/>
+                    <span className="button-name">Prontuario</span>
+                </a>
+                <a href="/registro" className="button">
+                    <FontAwesomeIcon className="icon-color" icon={faClipboardUser} shake />
+                    <span className="button-name">Registro de pacientes</span>
+                </a>
+                <a href="/prescricao" className="button">
+                    <FontAwesomeIcon className="icon-color" icon={faFileWaveform} shake />
+                    <span className="button-name">Prescrição</span>
+                </a>
+            </nav>
+            <main>
+                <header>
+                    <h3>Cadastro de Paciente</h3>
+                </header>
+                <section className="container-list">
+                    <CustomInput
+                        label='Paciente'
+                        name='email'
+                        value={''}
+                        type='text'
+                        onChange={''}
+                        placeholder="Digite o nome do paciente"
+                        required={true}
+                    />
+                    <CustomInput
+                        label='CPF'
+                        name='email'
+                        value={''}
+                        type='text'
+                        onChange={''}
+                        placeholder="Digite o CPF do paciente"
+                        required={true}
+                    />
+                    <DateSelector/>
+                    <button className="button-save">Salvar</button>
+                </section>
+            </main>
+        </div>
+    )
 }
 
 export default Record

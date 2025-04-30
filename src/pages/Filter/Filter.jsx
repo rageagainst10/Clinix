@@ -36,30 +36,27 @@ export default function Filter() {
     <div className="page-filter">
       <nav className="container-navbar">
         <img className="logo_empresa" src={logo} alt="logo da empresa"/>
-        <button className="button">
+        <a href="/filtro" className="button">
           <FontAwesomeIcon className="icon-color" icon={faLaptopMedical} shake/>
           <span className="button-name">Prontuario</span>
-        </button>
-        <button className="button">
+        </a>
+        <a href="/registro" className="button">
           <FontAwesomeIcon className="icon-color" icon={faClipboardUser} shake />
           <span className="button-name">Registro de pacientes</span>
-        </button>
-        <button className="button">
+        </a>
+        <a href="/prescricao" className="button">
           <FontAwesomeIcon className="icon-color" icon={faFileWaveform} shake />
           <span className="button-name">Prescrição</span>
-        </button>
+        </a>
       </nav>
-
       <main>
         <header>
           <h3>Consultas</h3>
         </header>
-
         <div className="container-list-search">
           <section className="container-list">
             <h1>list</h1>
           </section>
-
           <section className="container-search">
             <h4 className="title-search">Filtros</h4>
             {/* DateRangePicker controlado */}
@@ -69,7 +66,7 @@ export default function Filter() {
               onApply={handleApply}
               onCancel={handleCancel}
             />
-            <div className="gap-2">
+            <div className="gap">
                 <SelectInput
                     label="Médico"
                     icon={<FontAwesomeIcon className="icon-color" icon={faUserNurse}/>}
