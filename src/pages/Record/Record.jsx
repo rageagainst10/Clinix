@@ -26,21 +26,21 @@ function Record (){
             <nav className="container-navbar">
                 <img className="logo_empresa" src={logo} alt="logo da empresa"/>
                 <a href="/filtro" className="button">
-                    <FontAwesomeIcon className="icon-color" icon={faLaptopMedical} shake/>
+                    <FontAwesomeIcon className="icon-color" icon={faLaptopMedical}/>
                     <span className="button-name">Prontuario</span>
                 </a>
                 <a href="/registro" className="button">
-                    <FontAwesomeIcon className="icon-color" icon={faClipboardUser} shake />
-                    <span className="button-name">Registro de pacientes</span>
+                    <FontAwesomeIcon className="icon-color" icon={faClipboardUser}/>
+                    <span className="button-name">Cadastro do Paciente</span>
                 </a>
                 <a href="/prescricao" className="button">
-                    <FontAwesomeIcon className="icon-color" icon={faFileWaveform} shake />
-                    <span className="button-name">Prescrição</span>
+                    <FontAwesomeIcon className="icon-color" icon={faFileWaveform}/>
+                    <span className="button-name">Prescrição do Paciente</span>
                 </a>
             </nav>
             <main>
                 <header>
-                    <h3>Cadastro de Paciente</h3>
+                    <h3>Cadastro do Paciente</h3>
                 </header>
                 <section className="container-list">
                     <CustomInput

@@ -37,25 +37,62 @@ export default function Filter() {
       <nav className="container-navbar">
         <img className="logo_empresa" src={logo} alt="logo da empresa"/>
         <a href="/filtro" className="button">
-          <FontAwesomeIcon className="icon-color" icon={faLaptopMedical} shake/>
+          <FontAwesomeIcon className="icon-color" icon={faLaptopMedical}/>
           <span className="button-name">Prontuario</span>
         </a>
         <a href="/registro" className="button">
-          <FontAwesomeIcon className="icon-color" icon={faClipboardUser} shake />
-          <span className="button-name">Registro de pacientes</span>
+          <FontAwesomeIcon className="icon-color" icon={faClipboardUser} />
+          <span className="button-name">Registro do pacientes</span>
         </a>
         <a href="/prescricao" className="button">
-          <FontAwesomeIcon className="icon-color" icon={faFileWaveform} shake />
-          <span className="button-name">Prescrição</span>
+          <FontAwesomeIcon className="icon-color" icon={faFileWaveform} />
+          <span className="button-name">Prescrição do Paciente</span>
         </a>
       </nav>
       <main>
         <header>
-          <h3>Consultas</h3>
+          <h3>Pronturaio</h3>
         </header>
         <div className="container-list-search">
           <section className="container-list">
-            <h1>list</h1>
+            <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Data de entrada</th>
+                <th scope="col">nome do paciente</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Sintoma</th>
+                <th scope="col">Tipo do exame</th>
+                <th scope="col">Prescrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>John</td>
+                <td>Doe</td>
+                <td>@social</td>
+                <td>@social</td>
+                <td>@social</td>
+              </tr>
+            </tbody>
+          </table>
           </section>
           <section className="container-search">
             <h4 className="title-search">Filtros</h4>

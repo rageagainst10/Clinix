@@ -122,3 +122,8 @@ header{
     padding: 10px;
     margin-left: 10px;
 }
+
+.button:hover .icon-color {
+    animation: fa-shake 1s;
+  }
+  

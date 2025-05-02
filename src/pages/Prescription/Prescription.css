@@ -48,6 +48,10 @@ header{
     padding: 10px;
 }
 
+.select-size{
+    width: 300px;
+}
+
 h1,h2,h3,h4,h5,h6, span{
     margin: 0;
     padding: 0;
@@ -63,6 +67,7 @@ h1,h2,h3,h4,h5,h6, span{
     padding: 20px;
     display: flex;
     width: 100%;
+    overflow: auto;
 }
 
 .text-fild{
@@ -71,3 +76,23 @@ h1,h2,h3,h4,h5,h6, span{
     border: 1px solid #B4B4B4;
     border-radius: 5px;
 }
+
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-save{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(0deg, #5797E2 0%, #65ACFF 100%);
+    color: white;
+}
+
+.button:hover .icon-color {
+    animation: fa-shake 1s;
+}
+  
