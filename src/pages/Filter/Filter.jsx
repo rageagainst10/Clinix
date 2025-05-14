@@ -11,6 +11,7 @@ import SelectInput from "../../components/SelectInput/SelectInput";
 /* Import Images */
 import logo from "../../assets/images/logo.png";
 /* Import Icons */
+
 import { faLaptopMedical, faClipboardUser, faFileWaveform, faUserNurse, faBedPulse, faTablets, faViruses} from '@fortawesome/free-solid-svg-icons';
 
 const options = [

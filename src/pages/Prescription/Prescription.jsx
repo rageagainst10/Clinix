@@ -5,10 +5,6 @@ import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Importando o JavaScript do Bootstrap
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// Omport Bootstrap form
-import Form from 'react-bootstrap/Form';
-// Importando o CSS dos ícones
-import 'bootstrap-icons/font/bootstrap-icons.css';
 /* Import imagens */
 import logo from "../../assets/images/logo.png";
 /* Import FontAwesome icon*/
