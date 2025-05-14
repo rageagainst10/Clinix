@@ -52,7 +52,7 @@ export default function Filter() {
       </nav>
       <main>
         <header>
-          <h3>Pronturaio</h3>
+          <h3>Prontuario</h3>
         </header>
         <div className="container-list-search">
           <section className="container-list">
