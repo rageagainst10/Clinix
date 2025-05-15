@@ -131,12 +131,12 @@ export default function Filter() {
                     placeholder="Filtro por medicamento"
                 />
                 <SelectInput
-                    label="Sintoma"
+                    label="Proguinóstico"
                     icon={<FontAwesomeIcon className="icon-color" icon={faViruses}/>}
                     options={options}
                     value={medicoId}
                     onChange={setMedicoId}
-                    placeholder="Filtro por sintoma"
+                    placeholder="Filtro por proguinóstico"
                 />
                 <div className="align-buttons">
                     <button className="button-filter">Filtrar</button>

@@ -52,23 +52,22 @@ function Prescription(){
                     <h3>Prescrição do Paciente</h3>
                 </header>
                 <section className="container-list">
-                    <CustomInput
-                        label='Paciente'
-                        name='email'
-                        value={''}
-                        type='text'
-                        onChange={''}
-                        placeholder="Nome do paciente"
-                        required={true}
-                    />
                     <div className="select-size">
-                    <SelectInput
-                        label="Médico"
+                        <SelectInput
+                        label="Paciente"
                         icon={''}
                         options={options}
                         value={medicoId}
                         onChange={setMedicoId}
-                        placeholder="Filtro por médico"
+                        placeholder="Nome do paciente"
+                    />
+                    <SelectInput
+                        label="Medicamento"
+                        icon={''}
+                        options={options}
+                        value={medicoId}
+                        onChange={setMedicoId}
+                        placeholder="Filtro pos medicamentos"
                     />
                     </div>
                     <textarea className="text-fild" placeholder="Receita médica" name="" id=""></textarea>
